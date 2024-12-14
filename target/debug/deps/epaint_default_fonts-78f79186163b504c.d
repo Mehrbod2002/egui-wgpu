@@ -1,0 +1,9 @@
+/home/mob/projects/rusts/egui-wgpu/target/debug/deps/libepaint_default_fonts-78f79186163b504c.rmeta: /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/lib.rs /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/Hack-Regular.ttf /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/NotoEmoji-Regular.ttf /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/Ubuntu-Light.ttf /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/emoji-icon-font.ttf
+
+/home/mob/projects/rusts/egui-wgpu/target/debug/deps/epaint_default_fonts-78f79186163b504c.d: /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/lib.rs /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/Hack-Regular.ttf /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/NotoEmoji-Regular.ttf /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/Ubuntu-Light.ttf /home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/emoji-icon-font.ttf
+
+/home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/lib.rs:
+/home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/Hack-Regular.ttf:
+/home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/NotoEmoji-Regular.ttf:
+/home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/Ubuntu-Light.ttf:
+/home/mob/.cargo/git/checkouts/egui-5e4507fa4153be06/9aae14c/crates/epaint_default_fonts/src/../fonts/emoji-icon-font.ttf:

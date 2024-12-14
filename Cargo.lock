@@ -372,15 +372,6 @@ source = "git+https://github.com/mehrbod2002/winit?branch=window_attribute#cf187
 [[package]]
 name = "ecolor"
 version = "0.29.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "775cfde491852059e386c4e1deb4aef381c617dc364184c6f6afee99b87c402b"
-dependencies = [
- "emath 0.29.1 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "ecolor"
-version = "0.29.1"
 source = "git+https://github.com/emilk/egui?tag=0.29.1#fe368bacc4a15697e347607e73a56c0299b3d42d"
 dependencies = [
  "bytemuck",
@@ -388,14 +379,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "ecolor"
+version = "0.29.1"
+source = "git+https://github.com/emilk/egui.git?branch=master#9aae14cdf4e50907805303c60cc96b6b2fff788e"
+dependencies = [
+ "emath 0.29.1 (git+https://github.com/emilk/egui.git?branch=master)",
+]
+
+[[package]]
 name = "egui"
 version = "0.29.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "53eafabcce0cb2325a59a98736efe0bf060585b437763f8c476957fb274bb974"
+source = "git+https://github.com/emilk/egui.git?branch=master#9aae14cdf4e50907805303c60cc96b6b2fff788e"
 dependencies = [
  "ahash",
- "emath 0.29.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "epaint 0.29.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "emath 0.29.1 (git+https://github.com/emilk/egui.git?branch=master)",
+ "epaint 0.29.1 (git+https://github.com/emilk/egui.git?branch=master)",
  "nohash-hasher",
 ]
 
@@ -426,30 +424,15 @@ checksum = "60b1af1c220855b6ceac025d3f6ecdd2b7c4894bfe9cd9bda4fbb4bc7c0d4cf0"
 [[package]]
 name = "emath"
 version = "0.29.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b1fe0049ce51d0fb414d029e668dd72eb30bc2b739bf34296ed97bd33df544f3"
-
-[[package]]
-name = "emath"
-version = "0.29.1"
 source = "git+https://github.com/emilk/egui?tag=0.29.1#fe368bacc4a15697e347607e73a56c0299b3d42d"
 dependencies = [
  "bytemuck",
 ]
 
 [[package]]
-name = "epaint"
+name = "emath"
 version = "0.29.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a32af8da821bd4f43f2c137e295459ee2e1661d87ca8779dfa0eaf45d870e20f"
-dependencies = [
- "ab_glyph",
- "ahash",
- "ecolor 0.29.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "emath 0.29.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "nohash-hasher",
- "parking_lot",
-]
+source = "git+https://github.com/emilk/egui.git?branch=master#9aae14cdf4e50907805303c60cc96b6b2fff788e"
 
 [[package]]
 name = "epaint"
@@ -461,7 +444,21 @@ dependencies = [
  "bytemuck",
  "ecolor 0.29.1 (git+https://github.com/emilk/egui?tag=0.29.1)",
  "emath 0.29.1 (git+https://github.com/emilk/egui?tag=0.29.1)",
- "epaint_default_fonts",
+ "epaint_default_fonts 0.29.1 (git+https://github.com/emilk/egui?tag=0.29.1)",
+ "nohash-hasher",
+ "parking_lot",
+]
+
+[[package]]
+name = "epaint"
+version = "0.29.1"
+source = "git+https://github.com/emilk/egui.git?branch=master#9aae14cdf4e50907805303c60cc96b6b2fff788e"
+dependencies = [
+ "ab_glyph",
+ "ahash",
+ "ecolor 0.29.1 (git+https://github.com/emilk/egui.git?branch=master)",
+ "emath 0.29.1 (git+https://github.com/emilk/egui.git?branch=master)",
+ "epaint_default_fonts 0.29.1 (git+https://github.com/emilk/egui.git?branch=master)",
  "nohash-hasher",
  "parking_lot",
 ]
@@ -470,6 +467,11 @@ dependencies = [
 name = "epaint_default_fonts"
 version = "0.29.1"
 source = "git+https://github.com/emilk/egui?tag=0.29.1#fe368bacc4a15697e347607e73a56c0299b3d42d"
+
+[[package]]
+name = "epaint_default_fonts"
+version = "0.29.1"
+source = "git+https://github.com/emilk/egui.git?branch=master#9aae14cdf4e50907805303c60cc96b6b2fff788e"
 
 [[package]]
 name = "equivalent"
@@ -584,6 +586,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "98ff03b468aa837d70984d55f5d3f846f6ec31fe34bbb97c4f85219caeee1ca4"
 dependencies = [
  "bitflags 2.6.0",
+]
+
+[[package]]
+name = "gpu-allocator"
+version = "0.27.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c151a2a5ef800297b4e79efa4f4bec035c5f51d5ae587287c9b952bdf734cacd"
+dependencies = [
+ "log",
+ "presser",
+ "thiserror",
+ "windows",
 ]
 
 [[package]]
@@ -1211,6 +1225,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "presser"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e8cf8e6a8aa66ce33f63993ffc4ea4271eb5b0530a9002db8455ea6050c77bfa"
+
+[[package]]
 name = "proc-macro-crate"
 version = "3.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1265,6 +1285,12 @@ checksum = "b5b9d34b8991d19d98081b46eacdd8eb58c6f2b201139f7c5f643cc155a633af"
 dependencies = [
  "proc-macro2",
 ]
+
+[[package]]
+name = "range-alloc"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c8a99fddc9f0ba0a85884b8d14e3592853e787d581ca1816c91349b10e4eeab"
 
 [[package]]
 name = "raw-window-handle"
@@ -1775,6 +1801,7 @@ dependencies = [
  "document-features",
  "js-sys",
  "log",
+ "naga",
  "parking_lot",
  "profiling",
  "raw-window-handle",
@@ -1822,13 +1849,16 @@ dependencies = [
  "android_system_properties",
  "arrayvec",
  "ash",
+ "bit-set",
  "bitflags 2.6.0",
+ "block",
  "bytemuck",
  "cfg_aliases 0.1.1",
  "core-graphics-types",
  "glow",
  "glutin_wgl_sys",
  "gpu-alloc",
+ "gpu-allocator",
  "gpu-descriptor",
  "js-sys",
  "khronos-egl",
@@ -1842,6 +1872,7 @@ dependencies = [
  "once_cell",
  "parking_lot",
  "profiling",
+ "range-alloc",
  "raw-window-handle",
  "renderdoc-sys",
  "rustc-hash",
@@ -1851,6 +1882,7 @@ dependencies = [
  "web-sys",
  "wgpu-types",
  "windows",
+ "windows-core",
 ]
 
 [[package]]
