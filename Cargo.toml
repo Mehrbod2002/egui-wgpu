@@ -53,7 +53,7 @@ fragile-send-sync-non-atomic-wasm = ["wgpu/fragile-send-sync-non-atomic-wasm"]
 
 [dependencies]
 egui = { git = "https://github.com/emilk/egui.git", branch = "master" }
-epaint = { git = "https://github.com/emilk/egui", tag = "0.29.1", features = ["bytemuck"] }
+epaint = { git = "https://github.com/emilk/egui", branch = "master", package = "epaint", features = ["bytemuck"] }
 
 ahash = { version = "0.8.11", default-features = false, features = [
     "no-rng", # we don't need DOS-protection, so we let users opt-in to it instead
